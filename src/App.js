@@ -1,5 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import logo from './logo.png';
+import f_pago1 from './methods_statement_cards.png';
+import f_pago2 from './oxxopay.svg';
+import f_pago3 from './paypal.svg';
+
+//import f_pago2 from './logo.png';
+//import f_pago3 from './logo.png';
 import './App.css';
 
 class App extends Component {
@@ -25,6 +31,11 @@ class App extends Component {
       },
       navLogo: {
         height: '80%'
+      },
+      navPago1: {
+        display: 'flex',
+        width: '80%',
+        alignItems: 'flex'
       },
       navLinksContainer: {
         display: 'flex',
@@ -128,7 +139,17 @@ class App extends Component {
               and $2.00 for each additional apparel item. Products are fulfilled
               in the US
             </p>
+
+            <p style={styles.details}>
+            <img style={styles.navPago1} src={f_pago1} alt="calithecat" />
+
+            <img style={styles.navPago1} src={f_pago2} alt="calithecat" />
+
+            <img style={styles.navPago1} src={f_pago3} alt="calithecat" />
+            </p>
           </div>
+
+
         </div>
       </Fragment>
     );
