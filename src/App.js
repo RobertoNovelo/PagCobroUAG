@@ -91,10 +91,11 @@ class App extends Component {
       },
       paymentsContainer: {
         display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'left',
-        flexWrap: 'wrap',
-        width: '80%',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        alignItems: 'baseline',
+        width: '70%',
+        height: '250px'
       }
     };
     return (
