@@ -1,10 +1,20 @@
 import React, { Component, Fragment } from 'react';
 import logo from './logo.png';
+import imgPayPal from './paypal.svg';
+import imgOxxoPay from './oxxopay.svg';
+import imgCard from './methods_statement_cards.png';
 import './App.css';
 
 class App extends Component {
   render() {
     const styles = {
+      imgPago:{
+        width: '10rem'
+      },
+      imgDivMetodosPago:{
+        paddingRight: '0rem',
+        paddingTop: '2rem'
+      },
       itemContainer: {
         display: 'flex',
         height: '50rem',
@@ -127,6 +137,29 @@ class App extends Component {
               country. Shipping costs start at: $3.99 for the first apparel item
               and $2.00 for each additional apparel item. Products are fulfilled
               in the US
+            </p>
+            <p>
+              <div style={styles.imgDivMetodosPago}>
+                <img
+                  style={styles.imgPago}
+                  src={imgPayPal}
+                  alt="PayPal"
+                />
+              </div>
+              <div style={styles.imgDivMetodosPago}>
+                <img
+                  style={styles.imgPago}
+                  src={imgOxxoPay}
+                  alt="Oxxo Pay"
+                />
+              </div>
+              <div style={styles.imgDivMetodosPago}>
+                <img
+                  style={styles.imgPago}
+                  src={imgCard}
+                  alt="Tarjetas de crédito y débito"
+                />
+              </div>
             </p>
           </div>
         </div>
