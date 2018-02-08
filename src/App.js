@@ -1,5 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import logo from './logo.png';
+import methods from './methods_statement_cards.png';
+import oxxopay from './oxxopay.svg';
+import paypal from './paypal.svg';
 import './App.css';
 
 class App extends Component {
@@ -50,11 +53,22 @@ class App extends Component {
         height: '80%',
         width: 'auto'
       },
+      paymentImage: {
+        height: '30%',
+        width: '30%',
+        padding: '1rem',
+      },
       detailsContainer: {
         paddingLeft: '6rem',
         paddingTop: '4rem',
         overflow: 'auto',
         flexGrow: 7
+      },
+      paymentContainer: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        alignItems: 'flex-start',
       },
       title: {
         fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
@@ -128,6 +142,11 @@ class App extends Component {
               and $2.00 for each additional apparel item. Products are fulfilled
               in the US
             </p>
+            <div style={styles.paymentContainer}>
+              <img style={styles.paymentImage} src={methods} alt="methods" />
+              <img style={styles.paymentImage} src={oxxopay} alt="oxxopay" />
+              <img style={styles.paymentImage} src={paypal} alt="paypal" />
+            </div>
           </div>
         </div>
       </Fragment>
