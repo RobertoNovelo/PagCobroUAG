@@ -1,5 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import logo from './logo.png';
+import cards from './methods_statement_cards.png';
+import oxxopay from './oxxopay.svg';
+import paypal from './paypal.svg';
 import './App.css';
 
 class App extends Component {
@@ -85,6 +88,14 @@ class App extends Component {
         fontSize: '1.3rem',
         fontWeight: '500',
         wordWrap: 'break-word'
+      },
+      paymentsContainer: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        alignItems: 'baseline',
+        width: '70%',
+        height: '250px'
       }
     };
     return (
@@ -128,6 +139,25 @@ class App extends Component {
               and $2.00 for each additional apparel item. Products are fulfilled
               in the US
             </p>
+
+            <div style={styles.paymentsContainer}>            
+                
+                <img              
+                  src={cards}
+                  alt="cards"
+                />
+              
+                <img              
+                  src={oxxopay}
+                  alt="oxxopay"
+                />
+              
+                <img              
+                  src={paypal}
+                  alt="paypal"
+                  width = '50%'
+                />             
+              </div>
           </div>
         </div>
       </Fragment>
