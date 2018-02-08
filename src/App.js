@@ -95,10 +95,16 @@ class App extends Component {
         textAlign: 'left'
       },
       paypal: {
-        width: '30%'
+        height: '40px',
+        paddingTop: '15px'
       },
       oxxopay: {
-        width: '40%'
+        height: '40px',
+        paddingTop: '15px'
+      },
+      cards: {
+        height: '40px',
+        paddingTop: '15px'
       }
     };
     return (
@@ -145,7 +151,7 @@ class App extends Component {
               </p>
             </div>
             <div style={styles.newBox}>
-              <img src={cards} alt="VISA" style={styles.itemImage}/>
+              <img src={cards} alt="Cards" style={styles.cards}/>
               <br/>
               <img src={oxxopay} alt="OXXO Pay" style={styles.oxxopay}/>
               <br/>
