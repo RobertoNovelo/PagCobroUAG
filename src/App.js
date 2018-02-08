@@ -2,6 +2,10 @@ import React, { Component, Fragment } from 'react';
 import logo from './logo.png';
 import './App.css';
 
+import cards from "./methods_statement_cards.png";
+import oxxopay from "./oxxopay.svg";
+import paypal from "./paypal.svg";
+
 class App extends Component {
   render() {
     const styles = {
@@ -85,7 +89,22 @@ class App extends Component {
         fontSize: '1.3rem',
         fontWeight: '500',
         wordWrap: 'break-word'
-      }
+      },
+      paymentContainer: {
+        display: 'flex',
+        textAlign: 'left',
+        flexDirection: 'column',
+        alignContent: 'space-around'
+      },
+      cards: {
+        width: '50%'
+      },
+      oxxopay: {
+        width: '40%'
+      },
+      paypal: {
+        width: '40%'
+      },
     };
     return (
       <Fragment>
@@ -112,22 +131,30 @@ class App extends Component {
             />
           </div>
           <div style={styles.detailsContainer}>
-            <h1 style={styles.title}>My Cat Can Live A Better Life Shirt</h1>
-            <p style={styles.subtitle}>
-              I Work Hard So My Cat Can Live A Better Life Shirt, Funny Cat
-              Shirt
-            </p>
-            <p style={styles.price}>$350 MXN</p>
-            <p style={styles.shipping}>Shipping Info</p>
-            <p style={styles.details}>
-              Orders are printed and shipped when the time expires or earlier.
-              You can expect your package to arrive 10 - 13 business days after
-              the product prints. Expedited or Rush shipping may be available
-              depending upon the product(s) selected and the destination
-              country. Shipping costs start at: $3.99 for the first apparel item
-              and $2.00 for each additional apparel item. Products are fulfilled
-              in the US
-            </p>
+            <div>
+              <h1 style={styles.title}>My Cat Can Live A Better Life Shirt</h1>
+              <p style={styles.subtitle}>
+                I Work Hard So My Cat Can Live A Better Life Shirt, Funny Cat
+                Shirt
+              </p>
+              <p style={styles.price}>$350 MXN</p>
+              <p style={styles.shipping}>Shipping Info</p>
+              <p style={styles.details}>
+                Orders are printed and shipped when the time expires or earlier.
+                You can expect your package to arrive 10 - 13 business days after
+                the product prints. Expedited or Rush shipping may be available
+                depending upon the product(s) selected and the destination
+                country. Shipping costs start at: $3.99 for the first apparel item
+                and $2.00 for each additional apparel item. Products are fulfilled
+                in the US
+              </p>
+            </div>
+
+            <div style={styles.paymentContainer}>
+              <div><img src={cards} alt="CARDS" style={styles.cards}/></div>
+              <div><img src={oxxopay} alt="OXXO Pay" style={styles.oxxopay}/></div>
+              <div><img src={paypal} alt="PayPal" style={styles.paypal}/></div>
+            </div>
           </div>
         </div>
       </Fragment>
