@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import logo from './logo.png';
+import oxxo from './oxxopay.svg';
+import paypal from './paypal.svg';
 import './App.css';
 
 class App extends Component {
@@ -25,6 +27,10 @@ class App extends Component {
       },
       navLogo: {
         height: '80%'
+      },
+      navPayments: {
+        height: '100px',
+        width : '100px'
       },
       navLinksContainer: {
         display: 'flex',
@@ -128,6 +134,20 @@ class App extends Component {
               and $2.00 for each additional apparel item. Products are fulfilled
               in the US
             </p>
+            <div style={styles.buttonImg}>
+              <p> 
+                <img style={styles.navPayments}
+                src={oxxo}
+                alt="Product Image"
+                /> 
+              </p>
+              <p> 
+                <img style={styles.navPayments}
+                src={paypal}
+                alt="Product Image"
+                />
+              </p>
+            </div>
           </div>
         </div>
       </Fragment>
