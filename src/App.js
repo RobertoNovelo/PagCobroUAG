@@ -15,10 +15,10 @@ class App extends Component {
         width: '70%'
       },
       paypal: {
-        width: '30%'
+        width: '45%'
       },
       oxxopay: {
-        width: '40%'
+        width: '45%'
       },
       itemContainer: {
         display: 'flex',
@@ -148,6 +148,7 @@ class App extends Component {
            <div style={styles.BoxPago}>
               <img style={styles.tarjetas} src={cards} alt="PAGO" />
               <img style={styles.oxxopay} src={oxxopay} alt="OXXOPAGO" />
+              <br/>
               <img style={styles.paypal} src={paypal} alt="PAYPALPAGO" />
             </div>
           </div>
