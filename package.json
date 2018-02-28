@@ -14,7 +14,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "npm run build && npm run s3-sync && npm run cf-invalidate",
-    "s3-sync": "aws s3 sync build/ s3://${REACT_APP_BUCKET_NAME} --profile ${REACT_APP_PROFILE}",
-    "cf-invalidate": "aws cloudfront create-invalidation --distribution-id ${REACT_APP_CLOUD_FRONT_ID} --paths /\\* --profile ${REACT_APP_PROFILE}"
+    "s3-sync": "aws s3 sync build/ s3://productos.midominio.com --profile miperfil",
+    "cf-invalidate": "aws cloudfront create-invalidation --distribution-id elIDIDIDIDI --paths /\\* --profile miperfil"
   }
 }
