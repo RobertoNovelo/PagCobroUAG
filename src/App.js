@@ -5,6 +5,7 @@ import Switch from 'react-router-dom/es/Switch';
 import Route from 'react-router-dom/es/Route';
 import Redirect from 'react-router-dom/es/Redirect';
 import BrowserRouter from 'react-router-dom/es/BrowserRouter';
+const Conekta = window.Conekta; // No npm package available, imported in index.html
 
 class App extends Component {
   render() {
