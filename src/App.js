@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import logo from './logo.png';
+import logo from './tonalalogo.png';
 import './App.css';
 import Switch from 'react-router-dom/es/Switch';
 import Route from 'react-router-dom/es/Route';
@@ -109,38 +109,28 @@ class Item extends Component {
   };
   products = [
     {
-      id: 'producto1',
-      title: 'Camisa 1',
+      id: 'best',
+      title: 'Cute best cat',
       description: 'Descripción',
       price: 100.0,
       image:
-        'https://vangogh.teespring.com/v3/image/oGRwVyoQlFfX-UDpYHwSIjMuDa0/480/560.jpg',
+        'https://images.lookhuman.com/render/standard/8484056982502988/3300-athletic_gray-z1-t-every-cat-is-the-best-cat.png',
       shipping: 'No shipping'
     },
     {
-      id: 'producto2',
-      title: 'Camisa 2',
-      description: 'Descripción',
-      price: 100.0,
-      image:
-        'https://vangogh.teespring.com/v3/image/oGRwVyoQlFfX-UDpYHwSIjMuDa0/480/560.jpg',
-      shipping: 'No shipping'
-    },
-    {
-      id: 'cat',
-      title: 'My Cat Can Live A Better Life Shirt',
+      id: 'NewB',
+      title: 'NewBalance Artesanales',
       description:
-        'I Work Hard So My Cat Can Live A Better Life Shirt, Funny Cat Shirt',
-      price: 100.0,
+        'Decoración tenis NewBalance a mano talle 27',
+      price: 1200.0,
       image:
-        'https://vangogh.teespring.com/v3/image/oGRwVyoQlFfX-UDpYHwSIjMuDa0/480/560.jpg',
-      shipping: `Orders are printed and shipped when the time expires or earlier.
-              You can expect your package to arrive 10 - 13 business days after
-              the product prints. Expedited or Rush shipping may be available
-              depending upon the product(s) selected and the destination
-              country. Shipping costs start at: $3.99 for the first apparel item
-              and $2.00 for each additional apparel item. Products are fulfilled
-              in the US`
+        'http://yosoydenayarit.com/wp-content/uploads/2015/10/artesan%C3%ADa-huichol-tennis-620x400.jpg',
+      shipping: `Los pedidos se imprimen y se envían cuando expira el tiempo o antes.
+                  Puede esperar que su paquete llegue entre 10 y 13 días hábiles después
+                    que el producto sea enviado. El envío apresurado o urgente puede estar disponible
+                    dependiendo del producto (s) seleccionado (s) y el destino en el
+                    país. Los costos de envío comienzan en: 30.00MXN por la primera prenda de vestir
+                    y 20.00MXN por cada artículo de vestimenta adicional. Los productos se hacen en México`
     }
   ];
   render() {
@@ -151,16 +141,16 @@ class Item extends Component {
     return (
       <Fragment>
         <div style={styles.navContainer}>
-          <img style={styles.navLogo} src={logo} alt="calithecat" />
+          <img style={styles.navLogo} src={logo} alt="TonalaRtesanal" />
           <div style={styles.navLinksContainer}>
-            <a style={styles.navLink} href="http://midominio.com">
-              HOME
+            <a style={styles.navLink} href="./App.js">
+              PRINCIPAL
             </a>
-            <a style={styles.navLink} href="http://midominio.com/blog">
-              BLOG
+            <a style={styles.navLink} href="./About.js">
+              PRODUCTOS
             </a>
-            <a style={styles.navLink} href="http://midominio.com/contact">
-              CONTACT
+            <a style={styles.navLink}  href="./About.js">
+              ABOUT
             </a>
           </div>
         </div>
@@ -172,7 +162,7 @@ class Item extends Component {
             <h1 style={styles.title}>{product.title}</h1>
             <p style={styles.description}>{product.description}</p>
             <p style={styles.price}>${product.price} MXN</p>
-            <p style={styles.shipping}>Shipping Info</p>
+            <p style={styles.shipping}>Información de envío</p>
             <p style={styles.details}>{product.shipping}</p>
           </div>
         </div>
